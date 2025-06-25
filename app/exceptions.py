@@ -3,3 +3,24 @@
 ## Evan Garvey
 
 ## This file contains the exception hierarchy for the calculator
+
+class CalculatorError(Exception):
+    pass
+
+class ValidationError(CalculatorError):
+
+    ## Used when the input cannot be validated / is invalid
+
+    pass
+
+class OperationError(CalculatorError):
+
+    ## Used when the operation fails
+
+    pass
+
+class ConfigurationError(CalculatorError):
+
+    ## Used when the configuration is invalid
+
+    pass
