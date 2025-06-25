@@ -5,6 +5,9 @@
 ## This file contains the exception hierarchy for the calculator
 
 class CalculatorError(Exception):
+
+    ## Base case for the exception hierarchy. More specific errors are seen below
+
     pass
 
 class ValidationError(CalculatorError):
